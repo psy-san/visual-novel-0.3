@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visual Novels Hub</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#0f0f0f;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* Fundo animado */
+body::before{
+    content:"";
+    position:fixed;
+    width:300%;
+    height:300%;
+    background:linear-gradient(
+        270deg,
+        #ff0000,
+        #ff7300,
+        #ff00ea,
+        #7300ff,
+        #00d5ff
+    );
+    animation:bg 12s infinite linear;
+    z-index:-1;
+    opacity:0.2;
+}
+
+@keyframes bg{
+    0%{transform:translate(-25%,-25%) rotate(0deg);}
+    100%{transform:translate(-25%,-25%) rotate(360deg);}
+}
+
+h1{
+    text-align:center;
+    margin:30px;
+    font-size:3rem;
+}
+
+.games{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    padding:30px;
+}
+
+.card{
+    background:#1a1a1a;
+    border-radius:20px;
+    overflow:hidden;
+    transition:0.4s;
+    box-shadow:0 0 20px rgba(0,0,0,0.5);
+}
+
+.card:hover{
+    transform:scale(1.03);
+    box-shadow:0 0 30px #ff00ff;
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+.card img:hover{
+    filter:brightness(1.2);
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card-content h2{
+    margin-bottom:10px;
+    color:#ff66ff;
+}
+
+.characters{
+    margin-top:10px;
+}
+
+.characters li{
+    margin-left:20px;
+    margin-bottom:5px;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Visual Novel Hub</h1>
+
+<div class="games">
+
+<!-- THE FREAK CIRCUS -->
+<div class="card">
+<a href="https://itch.io/" target="_blank">
+<img src="https://picsum.photos/500/300?1">
+</a>
+
+<div class="card-content">
+<h2>The Freak Circus</h2>
+
+<ul class="characters">
+<li>Pierrot</li>
+<li>Harlequin</li>
+<li>Jester</li>
+<li>Doutor</li>
+<li>Ticket Man</li>
+<li>Columbina</li>
+</ul>
+</div>
+</div>
+
+<!-- KINGDOM OF MARIONETTES -->
+<div class="card">
+<a href="https://itch.io/" target="_blank">
+<img src="https://picsum.photos/500/300?2">
+</a>
+
+<div class="card-content">
+<h2>Kingdom of Marionettes</h2>
+
+<ul class="characters">
+<li>Celine</li>
+<li>Rire</li>
+<li>Marion</li>
+<li>Lucien</li>
+<li>Aster</li>
+<li>Rosen</li>
+<li>Claude</li>
+<li>Noel</li>
+<li>Lune</li>
+<li>Faye</li>
+<li>Ophelia</li>
+<li>Victor</li>
+<li>Elias</li>
+<li>Raven</li>
+<li>Selene</li>
+<li>Adrian</li>
+<li>Felix</li>
+<li>Iris</li>
+<li>Damien</li>
+<li>Alaric</li>
+</ul>
+</div>
+</div>
+
+<!-- TRAPPED WITH JESTER -->
+<div class="card">
+<a href="https://itch.io/" target="_blank">
+<img src="https://picsum.photos/500/300?3">
+</a>
+
+<div class="card-content">
+<h2>Trapped With Jester</h2>
+
+<ul class="characters">
+<li>Jester</li>
+</ul>
+</div>
+</div>
+
+<!-- DON'T EAT THE CASHIER -->
+<div class="card">
+<a href="https://itch.io/" target="_blank">
+<img src="https://picsum.photos/500/300?4">
+</a>
+
+<div class="card-content">
+<h2>Don't Eat The Cashier</h2>
+
+<ul class="characters">
+<li>Deiran</li>
+<li>David Rivera</li>
+<li>Viktor Baker</li>
+</ul>
+</div>
+</div>
+
+<!-- THE SLUGAMAN -->
+<div class="card">
+<a href="https://itch.io/" target="_blank">
+<img src="https://picsum.photos/500/300?5">
+</a>
+
+<div class="card-content">
+<h2>The Slugaman: Chromodoris Willani Demo</h2>
+
+<ul class="characters">
+<li>PB</li>
+<li>Adrian</li>
+<li>Kevin</li>
+<li>Astro</li>
+<li>Lady Tem</li>
+</ul>
+</div>
+</div>
+
+<!-- ONLINE OBSESSION -->
+<div class="card">
+<a href="https://itch.io/" target="_blank">
+<img src="https://picsum.photos/500/300?6">
+</a>
+
+<div class="card-content">
+<h2>Online Obsession</h2>
+
+<ul class="characters">
+<li>Adi</li>
+</ul>
+</div>
+</div>
+
+<!-- DEAD PLATE -->
+<div class="card">
+<a href="https://itch.io/" target="_blank">
+<img src="https://picsum.photos/500/300?7">
+</a>
+
+<div class="card-content">
+<h2>Dead Plate</h2>
+
+<ul class="characters">
+<li>Vincent</li>
+<li>Rody</li>
+</ul>
+</div>
+</div>
+
+<!-- BLOODY PAINTER DATING SIM -->
+<div class="card">
+<a href="https://itch.io/" target="_blank">
+<img src="https://picsum.photos/500/300?8">
+</a>
+
+<div class="card-content">
+<h2>Bloody Painter Dating Sim</h2>
+
+<ul class="characters">
+<li>Helen Otis</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<script>
+const cards = document.querySelectorAll(".card");
+
+cards.forEach(card => {
+    card.addEventListener("mousemove", () => {
+        card.style.background = "#2b002b";
+    });
+
+    card.addEventListener("mouseleave", () => {
+        card.style.background = "#1a1a1a";
+    });
+});
+</script>
+
+</body>
+</html>
